@@ -1,1 +1,7 @@
 /* ini file css external */
+.company-logo{
+    height: 50px;
+    width: 50px;
+    background: cadetblue;
+    border-radius: 50%;
+}
