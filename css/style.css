@@ -1,7 +1,478 @@
-/* ini file css external */
+body{
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin:0px;
+    background-color: #ffffff;
+}
+
+/* CSS untuk Navbar dan juga logo */
+nav{
+    display: flex; 
+}
+
+nav>a{
+    border:1px solid;
+    padding:10px;
+    color: black;
+    text-decoration: none;
+}
+
 .company-logo{
+    min-height: 50px;
+    width: 50px;
+    background: #00cc99;
+    border-radius: 50%;
+}
+
+.logo-and-navbar{
+    display: flex;
+    justify-content: space-between;
+    min-height: 60px;
+    gap:24px;
+    margin-top: 8px;
+    align-items: center;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.no-border-radius{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px
+}
+
+.right-no-border-radius{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+}
+
+.left-no-border-radius{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+}
+
+/* CSS untuk main content */
+main{
+    margin-left: 180px;
+    margin-right: 180px;
+}
+main>header{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 750;
+}
+main>header>h1{
+    font-style: normal;
+    font-size: 2cm;
+    margin-bottom:20px;
+}
+
+main>header>p{
+   color: grey; 
+   margin-bottom: 30px;
+   font-size: 20px;
+}
+
+#main-content{
+    display: flex;
+    gap:50px;
+}
+
+.main-container{
+    flex:1;
+    text-align: center;
+    height: auto;
+}
+
+/* CSS untuk form section */
+.submit-form{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e9ecef;
+    padding-bottom:35px ;
+    border-radius: 20px;
+    height: auto;
+}
+
+.submit-form>header {
+    font-weight: 750;
+    font-family: "Playfair Display", serif;
+    align-items:flex-start;
+}
+
+.submit-form>header>h1 {
+    font-size: 1cm;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.submit-form>header>p {
+    margin-top: 0px;
+    color: grey;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.submit-form>#form>.inputgroup{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.submit-form>#form>.inputgroup>#first-name,#last-name,#last2-name,#email,select,#submit{
+    border-radius: 20px;
+    border:none;
+    font-size: 16px;
+}
+
+.submit-form>#form>.inputgroup>#first-name,#last-name,#last2-name{
+    padding: 10px;
+    width: 4.4cm; 
+}
+.submit-form>#form>.inputgroup> #email{
+    padding: 10px;
+    width: 9.4cm;
+}
+
+.submit-form>#form>.inputgroup>select{
+    width: 10cm;
+    height: 1.2cm;
+    color: grey;
+}
+
+.submit-form>#form>#submit{
+    width: 10cm;
+    margin: auto;
+    height: 1.2cm;
+    border-radius: 20px;
+    background: #00cc99;
+    font-weight: 550;
+}
+
+
+.submit-form > #form > .inputgroup .error {
+    color:#ff4d4d;
+    font-size: 14px;
+    height: 13px;
+}
+.error-border {
+    border: 2px solid #ff4d4d 
+}
+
+/* CSS untuk sliding banner */
+.sliding-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    max-width: 100000px;
+    height: 410px; 
+}
+
+.mySlides-fade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.mySlides-fade>img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+
+/* .mySlides-fade>.text{
+    color: #000000;
+    font-size: 17px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+} */
+
+.mySlides-fade.active {
+    opacity: 1;
+}
+
+.error-border {
+    border: 2px solid #ff4d4d 
+}
+
+.Rating-pengguna{
+    background-color: #e9ecef;
+    border-radius: 20px;
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-top: 20px;
+}
+
+
+.Profile-pengguna{
+    display: flex;
+    margin-bottom: 0px;
+    flex-direction: column;
+}
+
+.user-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.profil-user{
+    display: flex;
+}
+.profil-user>img{
     height: 50px;
     width: 50px;
-    background: cadetblue;
+    background: #00cc99;
     border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    max-width: 100%;
+}
+
+.user-profile>.name-user>p{
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 0px;
+    padding-top: 5px;
+}
+
+.user-profile>.jabatan-user>p{
+    margin-top: 2px;
+    font-size: 15px;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 0px;
+}
+
+.text-and-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.text-rating{
+    margin-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+}
+
+.text-rating>p{
+    margin-top: 16px;
+    padding-bottom: 0px;
+}
+
+.rating-star{
+    margin-left: 20px;
+    margin-top: 0px;
+    font-size: 30px;
+}
+.rating-star>p{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+/* CSS untuk our content */
+
+.our-package>h1{
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 550;
+    text-align: start;
+}
+.our-package>p{
+    font-size: 17px;
+    font-weight: 0;
+    margin-top: 0;
+    text-align: start;
+}
+#our-content{
+    background-color: #e9ecef;
+    border-radius: 20px;
+    padding: 20px;
+}
+.vl{
+  width: 1px;
+  size: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin: 0;
+}
+.row-1{
+    display: flex;
+    justify-content: space-around;
+}
+.Trip>h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    color: #00cc99;
+}
+
+.trip>p{
+    margin-top: 0px;
+    font-size: 15px; 
+}
+/* CSS untuk call to action */
+
+.tag-line{
+    background-color: #e4ecd5;
+    margin-top: 30px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.image-and-tagline{
+    height: auto;
+    width: 500px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-and-tagline>img{
+    width: 400px;
+    margin-right: 0px;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    align-items: center;
+    max-width: 100%;
+
+}
+
+.image-and-tagline>h6{
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    font-weight: 550;
+    margin-top: 20px;
+    margin-left: 0px;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: normal;
+    margin-right: 50px; 
+    margin-bottom: 0px; 
+}
+
+.image-and-tagline>p{
+    font-size: 20px;
+    font-weight: normal;
+    margin-right: 50px;
+    color: grey;
+}
+
+#call-to-action{
+    border-radius: 20px;
+    border: 1px solid;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-right: 50px;
+}
+#call-to-action>a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+footer{
+    margin-top: 20px;
+    background-color: #e9ecef;
+}
+.contact-us{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+@media (max-width: 768px) {
+    .logo-and-navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav > a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #main-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sliding-banner {
+        height: auto;
+    }
+
+    .Rating-pengguna {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tag-line {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .image-and-tagline img {
+        width: 90%;
+    }
+
+    .contact-us {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sliding-banner {
+        width: 100%;
+        height: auto;
+    }
+
+    .mySlides-fade {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 }

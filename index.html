@@ -3,31 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Travel Website</title>
 
     <!-- CSS -->
-     <link rel="stylesheet" href="17-feb-25-JosefHarvey\css\style.css">
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+
+    <!-- JS Script -->
+     <script defer src="js\script.js"></script>
+
+     <style>
+     
+        
+    </style>
 </head>
 <body>
     <!-- header dan navigation -->
-    <header>
+    <header class="logo-and-navbar">
         <!-- logo company -->
         <div class="company-logo">
-
         </div>
 
         <!-- Navbar -->
         <nav>
-            <a href="a">Home</a>
-            <a href="a">Our Package</a>
-            <a href="a">Call Us</a>
+            <a href="#main-content" class="right-no-border-radius">Home</a>
+            <a href="#our-content" class="no-border-radius">Our Package</a>
+            <a href="#call-to-action" class="left-no-border-radius">Call Us</a>
         </nav>
     </header>
 
     <!-- Main content -->
-    <main></main>
+    <main>
+        <!-- Header main content -->
+        <header>
+            <h1> Your trusted travel agent</h1>
+            <p>Your happiness is our happiness</p>
+        </header>
+        
+        <!-- Main content -->
+        <section id="main-content">
+            
+            <div class="main-container">
+                <div class="submit-form">
+                    <header>
+                        <h1>Get in Touch</h1>
+                        <p>Reach us anytime you want.</p>
+                        
+                    </header>
+        
+                    <form id="form" action="/17-feb-25-JosefHarvey">
+                        <div class="inputgroup">
+                            <input type="text" id="first-name" placeholder="first name">
+                            <input type="text" id="last-name" placeholder="last name">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="inputgroup">
+                            <input type="text" id="email" placeholder="youremail.com">
+                            <div class="error"></div>
+                        </div>
+                        
+                        <div class="inputgroup">
+                            <select name="package" id="package">
+                                <option value ="select" disabled selected>Pick your holiday city</option> 
+                                <option value="Bali">Bali</option>
+                                <option value="Malang">Malang</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Malaysia">Malaysia</option>
+                            </select>
+                            <div class="error"></div>
+                        </div>
+                        <input type="submit" id="submit" value="Submit">
+                    </form>
+                </div>
+                
+            </div>
+            
+            <div class="main-container">
+                <div class="sliding-banner">
+                    <div class="banner-content">
+                        <div class="mySlides-fade">
+                            <img src="assets\sliding-banner\bali.jpeg" style="width: 100%">
+                            <!-- <div class="text">Bali</div> -->
+                        </div>
+
+                        <div class="mySlides-fade">
+                            <img src="assets\sliding-banner\Malang.jpg" style="width: 100%">
+                            <!-- <div class="text">Malang</div> -->
+                        </div>
+
+                        <div class="mySlides-fade">
+                            <img src="assets\sliding-banner\malaysia.jpeg" style="width: 100%">
+                            <!-- <div class="text">Malaysia</div> -->
+                        </div>
+
+                        <div class="mySlides-fade">
+                            <img src="assets\sliding-banner\Singapore.jpeg" style="width: 100%">
+                            <!-- <div class="text">Singapore</div> -->
+                        </div>
+                        
+                        <div class="mySlides-fade">
+                            <img src="assets\sliding-banner\thailand.jpg" style="width: 100%">
+                            <!-- <div class="text">Thailand</div> -->
+                        </div>
+                        
+                        <div class="mySlides-fade">
+                            <img src="assets\sliding-banner\vietnam.jpg" style="width: 100%">
+                            <!-- <div class="text">Vietnam</div> -->
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+         <div class="Rating-pengguna">
+
+                        <div class="Profile-pengguna">
+                            <div class="profil-user">
+                                <img src="assets\user-picture\140810220023.jpeg" >
+                                <div class="user-profile">
+                                            <div class="name-user">
+                                                <p>Josef Harvey</p>
+                                            </div>
+                                            <div class="jabatan-user">
+                                                <p>Ceo of NASA</p>
+                                            </div>
+                                </div>
+                            </div>
+                            <div class="text-and-icon">
+                                <div class="text-rating">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi ducimus beatae error dolore libero laboriosam odio magnam temporibus nam! Accusantium magnam quia ad aspernatur ipsa quos ut suscipit facilis sapiente?</p>
+                                </div>
+                                <div class="rating-star">
+                                        <p>★★★★★</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="Profile-pengguna">
+                            <div class="profil-user">
+                                <img src="assets\user-picture\140810220023.jpeg" >
+                                <div class="user-profile">
+                                            <div class="name-user">
+                                                <p>Josef Harvey</p>
+                                            </div>
+                                            <div class="jabatan-user">
+                                                <p>Ceo of NASA</p>
+                                            </div>
+                                </div>
+                            </div>
+                            <div class="text-and-icon">
+                                <div class="text-rating">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi ducimus beatae error dolore libero laboriosam odio magnam temporibus nam! Accusantium magnam quia ad aspernatur ipsa quos ut suscipit facilis sapiente?</p>
+                                </div>
+                                <div class="rating-star">
+                                        <p>★★★★★</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+            </div>
+
+        <!-- our Package content -->
+        <header class="our-package">
+            <h1> Let’s take you to the most magical places on Earth</h1>
+            <p>The Most Breathtaking Destinations to Add to Your 2025 Travel List</p>
+        </header>
+
+        <section id="our-content">
+            <div class="row-1">
+                <div class="Trip">
+                    <h4>Bali</h4>
+                    <p>Lorem ipsum dolor sit amet </p>
+                </div>
+                <hr class="vl"> </hr>
+                
+                <div class="Trip">
+                    <h4>Bali</h4>
+                    <p>Lorem ipsum dolor sit amet </p>
+                </div>
+                <hr class="vl"> </hr>
+                <div class="Trip">
+                    <h4>Bali</h4>
+                    <p>Lorem ipsum dolor sit amet </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row-1">
+                <div class="Trip">
+                    <h4>Bali</h4>
+                    <p>Lorem ipsum dolor sit amet </p>
+                </div>
+                <hr class="vl"> </hr>
+                <div class="Trip">
+                    <h4>Bali</h4>
+                    <p>Lorem ipsum dolor sit amet </p>
+                </div>
+                <hr class="vl"> </hr>
+                <div class="Trip">
+                    <h4>Bali</h4>
+                    <p>Lorem ipsum dolor sit amet </p>
+                </div>
+            </div>
+            
+          
+        </section>
+
+        <!-- Call Us Section -->
+    <header class="tag-line">
+        <div class="image-and-tagline">
+            <img src="assets\tag-line\phuket.jpg">
+        </div>
+        <div class="image-and-tagline">
+            <h6> Travel, relax, enjoy and let us handle the rest!</h6>
+            <p>Discover new destinations, create unforgettable memories, and leave all the planning to us!</p>
+            
+            <section id="call-to-action">
+                <a href="#">Press To Call</a>
+             </section>
+            
+        </div>
+        
+     </header>
+
+    </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <div class="contact-us">
+            <p> +6281234567890</p>
+            <p> abcdefg@gmail.com</p>
+            <p>jln.in aja dulu</p>
+        </div>
+    </footer>
 </body>
 </html>
